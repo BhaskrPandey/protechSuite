@@ -1,0 +1,44 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.back-button {
+  background-color: #007aff;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.proposal-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.proposal-form mat-form-field,
+.proposal-form div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -20px; /* Adjusted margin */
+  margin-bottom: 8px;
+}
+
+.proposal-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007aff;
+  color: white;
+}

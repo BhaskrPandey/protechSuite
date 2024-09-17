@@ -1,0 +1,153 @@
+/* html, body {
+/* html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.navbar-dark.bg-primary {
+    background: linear-gradient(to bottom right, #437bb8, #437b);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 56px); 
+}
+
+.full-width-image {
+    width: 232vh;
+    height: 50vh; 
+}
+.contact-info {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color:#fff;
+  }
+   */
+
+
+
+
+   .navbar {
+    background: linear-gradient(to right,rgb(100, 154, 193), rgb(29, 85, 122),#094166);
+    color: white;
+  }
+ 
+  .navbar-title {
+    font-weight: bold;
+    color: white;
+  }
+ 
+  .spacer {
+    flex: 1 1 auto;
+  }
+ 
+  .educator-badge {
+    background-color: transparent;
+    color:#fff;
+    border: 1.5px solid #fff ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+ 
+  a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+ 
+  .logout-button {
+    background-color: #E74C3C;
+    color: white;
+  }
+ 
+
+
+
+
+
+ 
+   mat-card {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    
+  }
+ 
+  .image-container {
+    position: relative;
+    display: flex;
+    width:auto;
+    justify-content: center;
+    margin: 20px 0;
+  }
+ 
+  img[mat-card-image] {
+    max-width: auto;
+    height: auto;
+  }
+ 
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+    padding: 1% 5%;
+  }
+ 
+  mat-card-content p {
+    font-size: 16px;
+    color: #555;
+    padding: 2%;
+  }
+ 
+  .centered-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+ 
+  .custom-card {
+    background-color: #f0f0f0;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 5px;
+  }
+ 
+  .footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+ 
+  .footer-content h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+ 
+  .footer-content p {
+    margin: 5px 0;
+  }
+ 
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+  }
+ 
+ 
+   

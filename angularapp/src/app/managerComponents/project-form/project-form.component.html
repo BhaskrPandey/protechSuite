@@ -1,0 +1,80 @@
+
+<app-manager-navbar></app-manager-navbar>
+<form [formGroup]="projectForm" (ngSubmit)="onSubmit()" class="project-form">
+  <h1>{{ projectId ? 'Edit Project' : 'Create New Project' }}</h1>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Project Title</mat-label>
+    <input matInput formControlName="projectTitle" required>
+    <mat-error *ngIf="projectForm.get('projectTitle').hasError('required')">
+      Project Title is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Project Description</mat-label>
+    <input matInput formControlName="projectDescription"  required>
+    <mat-error *ngIf="projectForm.get('projectDescription').hasError('required')">
+      Project Description is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Start Date</mat-label>
+    <input matInput formControlName="startDate" type="date" required>
+    <mat-error *ngIf="projectForm.get('startDate').hasError('required')">
+      Start Date is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>End Date</mat-label>
+    <input matInput formControlName="endDate" type="date" required>
+    <mat-error *ngIf="projectForm.get('endDate').hasError('required')">
+      End Date is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Frontend Tech Stack</mat-label>
+    <input matInput formControlName="frontEndTechStack" required>
+    <mat-error *ngIf="projectForm.get('frontEndTechStack').hasError('required')">
+      Frontend Tech Stack is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Backend Tech Stack</mat-label>
+    <input matInput formControlName="backendTechStack" required>
+    <mat-error *ngIf="projectForm.get('backendTechStack').hasError('required')">
+      Backend Tech Stack is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Database</mat-label>
+    <input matInput formControlName="database" required>
+    <mat-error *ngIf="projectForm.get('database').hasError('required')">
+      Database is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Status</mat-label>
+    <mat-select formControlName="status" required>
+      <mat-option value="planned">Planned</mat-option>
+      <mat-option value="in-progress">In Progress</mat-option>
+      <mat-option value="completed">Completed</mat-option>
+    </mat-select>
+    <mat-error *ngIf="projectForm.get('status').hasError('required')">
+      Status is required
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">{{ projectId ? 'Update Project' : 'Add Project' }}</button>
+</form>
+
+
+<!-- <p>Project Title</p>
+<label for="projectTitle"></label>
+<button>Add Project</button> -->

@@ -1,0 +1,31 @@
+<app-employee-navbar></app-employee-navbar>
+<div class="container">
+  <button mat-button class="back-button" routerLink="/empHome">Back</button>
+  <form [formGroup]="proposalForm" (ngSubmit)="onSubmit()" class="proposal-form">
+    <h1>{{ proposalId ? 'Edit Proposal' : 'Create New Proposal' }}</h1>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Proposal Title</mat-label>
+      <input matInput formControlName="proposalTitle" required>
+      <mat-error *ngIf="proposalForm.get('proposalTitle').hasError('required')">
+        Proposal Title is required
+      </mat-error>
+    </mat-form-field> 
+
+    <mat-form-field appearance="fill">
+      <mat-label>Proposal Description</mat-label>
+      <textarea matInput formControlName="proposalDescription" required></textarea>
+      <mat-error *ngIf="proposalForm.get('proposalDescription').hasError('required')">
+        Proposal Description is required
+      </mat-error>
+    </mat-form-field>
+
+
+    <div>
+      <label>Attachment</label>
+      <input type="file">
+    </div>
+
+    <button mat-raised-button color="primary" type="submit">{{ proposalId ? 'Update Proposal' : 'Add Proposal' }}</button>
+  </form>
+</div>

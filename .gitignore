@@ -1,0 +1,4 @@
+/**/node-modules
+/nodeapp/tests
+*.spec.ts
+angularapp/karma.conf.js

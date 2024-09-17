@@ -1,0 +1,26 @@
+<!-- <mat-toolbar class="navbar">
+  <span class="navbar-title">ProTechSuite</span>
+  <span class="spacer"></span>
+  <div class="educator-badge">man / Manager</div>
+  <a mat-button routerLink="/home">Home</a>
+  <a mat-button routerLink="/project">Project</a>
+  <a mat-button routerLink="/project-proposal">Project Proposals</a>
+  <button mat-button class="logout-button" routerLink="/login">Logout</button>
+</mat-toolbar>
+  -->
+
+
+  <mat-toolbar class="navbar">
+    <span class="navbar-title">ProTechSuite</span>
+    <span class="spacer"></span>
+    <div class="educator-badge">{{userName}} / Manager</div>
+    <a mat-button routerLink="/home">Home</a>
+    <button mat-button [matMenuTriggerFor]="projectMenu">Project</button>
+    <a mat-button routerLink="/enrollment-requested" routerLink="/proposals">Project Proposals</a>
+     
+    <button mat-button class="logout-button" (click)="logout()">Logout</button>
+    </mat-toolbar>
+    <mat-menu #projectMenu="matMenu">
+    <button mat-menu-item routerLink="/addProject">Add Project</button>
+    <button mat-menu-item routerLink="/viewProject">View Project</button>
+    </mat-menu>

@@ -1,0 +1,135 @@
+/* Container styling */
+.container {
+  margin: 20px;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search field styling */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th.mat-header-cell {
+  text-align: center;
+}
+th, td {
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 10px;
+}
+
+th {
+  text-align: center;
+  background-color: #007aff;
+  color:white;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Button styling */
+button {
+  margin: 5px;
+}
+
+button.showBtn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+button.editBtn {
+  background-color: #2196F3; /* Blue */
+  color: white;
+}
+
+button.deleteBtn {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+/* Pagination styling */
+.mat-paginator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.mat-form-field{
+  width:200px;
+}
+.action-column th.mat-header-cell,
+.action-column td.mat-cell {
+  text-align: center;
+  /* Center align text */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  /* Center align buttons */
+  gap: 10px;
+  /* Add some space between buttons */
+}
+
+mat-form-field {
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+mat-card {
+  width: fit-content;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.main{
+  z-index: -1;
+}
+
+mat-card {
+  width: fit-content;
+  text-align: center;
+}
+
+button.approveBtn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+button.rejectBtn {
+  background-color: #f44336; /* Red */
+  color: white;
+} 

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+   .container {
+       display: flex;
+       height: 100vh;
+       background-color: #f5f5f5;
+   }
+   
+   .left-section {
+       flex: 1;
+       background: linear-gradient(to top, #04d4d4,
+       #004d80);
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       padding: 20px;
+       width: auto;
+   }
+   
+   .branding {
+        width: auto;
+   }
+   
+   .branding h1 {
+       font-size: 48px;
+       margin: 0;
+   
+   }
+   
+   .branding p {
+       margin-top: 5%;
+       font-size: 18px;
+   }
+   
+   .right-section {
+       flex: 1;
+       background: linear-gradient(to bottom, #04d4d4,
+      #004d80);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: auto;
+   }
+   
+   mat-card {
+       width: 400px;
+       padding: 20px;
+   }
+   
+   mat-card-title {
+       text-align: center;
+       font-size: 24px;
+       margin-bottom: 20px;
+   }
+   
+   mat-form-field {
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   
+   button {
+       width:50px;
+       
+       
+   }
+   
+   p {
+       text-align: center;
+   }
+   
+   a {
+       color: #3f51b5;
+       text-decoration: none;
+   }
+   
+   #login-button {
+       background-color: #0073e5;
+       margin-bottom: 5%;
+       display: flex;
+       margin-left: 160px;
+       
+   }
+   
+   /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .branding h1 {
+        font-size: 36px;
+    }
+   
+    mat-card {
+        width: 300px;
+    }
+  }
+   
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+   
+    .left-section, .right-section {
+        flex: none;
+        width: 100%;
+        height: 50vh;
+    }
+   
+    .branding h1 {
+        font-size: 28px;
+    }
+   
+    mat-card {
+        width: 90%;
+    }
+  }
+
+ 
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+ 
+  .left-section, .right-section {
+      flex: none;
+      width: 100%;
+      height: 50vh;
+  }
+ 
+  .branding h1 {
+      font-size: 28px;
+  }
+ 
+  mat-card {
+      width: 90%;
+  }
+}
+ 
+/* Media query for responsiveness */
+ 
+@media (max-width: 480px) {
+  .branding h1 {
+      font-size: 24px;
+  }
+ 
+  .branding p {
+      font-size: 16px;
+  }
+ 
+  mat-card {
+      width: 100%;
+      padding: 10px;
+  }
+ 
+  mat-card-title {
+      font-size: 20px;
+  }
+ 
+  mat-form-field {
+      margin-bottom: 10px;
+  }
+ 
+  button {
+      font-size: 14px;
+  }
+}

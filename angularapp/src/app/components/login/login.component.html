@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="left-section">
+    <div class="branding">
+      <h1>Protech Suite</h1>
+      <p>Your journey to knowledge mastery begins with us.
+        Take the first step by enrolling in a course.</p>
+    </div>
+  </div>
+  <div class="right-section">
+    <mat-card>
+      <mat-card-title>Login</mat-card-title>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="loginForm.get('email').hasError('required')">
+            Email is required
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('email').hasError('email')">
+            Enter a valid email
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="loginForm.get('password').hasError('required')">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" id="login-button">Login</button>
+      </form>
+      <p>Don't have an account? <a routerLink="/signup">Signup</a></p>
+    </mat-card>
+  </div>
+</div>
+
+<!-- <p>Login</p>
+<input placeholder="Email">
+<input placeholder="Password"> -->

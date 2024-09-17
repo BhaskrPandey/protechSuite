@@ -1,0 +1,14 @@
+<mat-toolbar class="navbar">
+  <span class="navbar-title">ProTechSuite</span>
+  <span class="spacer"></span>
+  <div class="educator-badge">{{userName}}/ Employee</div>
+  <a mat-button routerLink="/empHome">Home</a>
+  <button mat-button [matMenuTriggerFor]="projectProposalMenu">Project Proposal</button>
+  <a mat-button routerLink="/projects">Projects</a>
+  <button mat-button class="logout-button" (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<mat-menu #projectProposalMenu="matMenu">
+  <button mat-menu-item routerLink="/addProjectProposal">Add Proposal</button>
+  <button mat-menu-item routerLink="/viewProjectProposal">View Proposal</button>
+</mat-menu>
